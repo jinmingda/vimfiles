@@ -31,6 +31,8 @@ set wildmenu        " visual autocomplete for command menu
 
 set guioptions-=T   " remove GUI toolbar
 set guioptions-=m   " remove GUI menu
+set guioptions=-L   " remove left scrollbar
+set guioptions=-r   " remove right scrollbar
 
 set incsearch       " search as characters are entered
 set hlsearch        " highlighted search result
@@ -46,7 +48,15 @@ set nofoldenable    " disable auto code folding
 
 set splitright      " new window appeared on the right when calling :vs
 
+set visualbell      " vim will flash screen instead of sounding a beep
+
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+map <C-n> :NERDTreeToggle<CR>       " use ctrl+n to toggle NERDTree
