@@ -4,6 +4,7 @@ set nocompatible
 
 colorscheme gruvbox
 set guifont=Consolas:h11:cANSI
+set guifontwide=NSimsun:h11
 
 filetype plugin on  " load filetype-specific plugins
 filetype indent on  " load filetype-specific indent files
@@ -12,6 +13,7 @@ syntax on           " enable syntax highlight
 
 set autoindent      " copy indentation from the previous line
 set smartindent     " add one extra level of indentation in some cases
+set nowrap          " do not wrap long lines
 
 set expandtab       " replace tabs with spaces
 set tabstop=4       " number of visual spaces per TAB
@@ -60,3 +62,4 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 map <C-n> :NERDTreeToggle<CR>       " use ctrl+n to toggle NERDTree
+let NERDTreeShowHidden=1            " show hidden files in NERDTree
