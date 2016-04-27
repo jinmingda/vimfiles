@@ -3,10 +3,10 @@
 ## Deployment
 
 ### On Windows
-1.  Make sure both Vim and Python support the same Windows version, 64-bit or 32-bit. Notice that Python2.7.11 may not work currently. Please try Python2.7.9 instead. You can find 64-bit Vim [here](https://bintray.com/veegee/generic/vim_x64/).
+1.  Make sure both Vim and Python support the same Windows version, 64-bit or 32-bit. Notice that 64-bit Vim may not be compiled well with Python2.7.11 right now. Please try Python2.7.9 instead. You can find 64-bit Vim [here](https://bintray.com/veegee/generic/vim_x64/).
 2.	Clone repository to local folder recursively including all the submodules:  
     `git clone --recursive https://github.com/jinmingda/vimfiles.git ~/Vim/vimfiles`
-3.	Move into working directory ~/Vim`.
+3.	Move into working directory `~/Vim`.
 4.	Make a symbolic link for `.vimrc` in Windows Command Prompt(Admin):  
     `mklink .vimrc .\vimfiles\.vimrc`
 
