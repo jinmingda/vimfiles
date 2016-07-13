@@ -40,9 +40,9 @@ set incsearch       " search as characters are entered
 set hlsearch        " highlighted search result
 
 set nobackup
-set nowritebackup
+set nowritebackup   " no ~ file
 
-set encoding=utf-8
+set encoding=utf-8  " unicode encoding
 
 set clipboard=unnamed
 
@@ -53,9 +53,14 @@ set splitright      " new window appeared on the right when calling :vs
 set visualbell      " vim will flash screen instead of sounding a beep
 
 
+" for html files, indent 2 spaces
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+
+
+" close vim when NERDTree is the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-
+" remap window switch keyboard shortcuts
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
