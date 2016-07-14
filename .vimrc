@@ -2,7 +2,8 @@ execute pathogen#infect()
 
 set nocompatible
 
-colorscheme gruvbox
+set background=dark
+colorscheme solarized
 set guifont=Consolas:h11:cANSI
 set guifontwide=NSimsun:h11
 
@@ -41,6 +42,8 @@ set hlsearch        " highlighted search result
 
 set nobackup
 set nowritebackup   " no ~ file
+
+set laststatus=2    " display status line
 
 set encoding=utf-8  " unicode encoding
 
