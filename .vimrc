@@ -1,3 +1,4 @@
+set runtimepath+=~/vimfiles
 execute pathogen#infect()
 
 set nocompatible
