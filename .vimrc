@@ -13,6 +13,8 @@ filetype indent on  " load filetype-specific indent files
 
 syntax on           " enable syntax highlight 
 
+set fileformat=unix " save files in unix format 
+
 set autoindent      " copy indentation from the previous line
 set smartindent     " add one extra level of indentation in some cases
 set nowrap          " do not wrap long lines
@@ -30,6 +32,7 @@ set smartcase       " case-sensitive only when containing capital letter
 set ruler           " display cursor position
 set cursorline      " highlight cursor line
 set number          " show line numbers
+set showmatch       " show match parentheses
 
 set wildmenu        " visual autocomplete for command menu
 
