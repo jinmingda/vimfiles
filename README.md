@@ -36,6 +36,7 @@ Please  see [https://gist.github.com/kyleturner/1563153](https://gist.github.com
 * Run `git rm --cached <submodule name>`.
 * Delete the relevant lines from the .gitmodules file.
 * Delete the relevant section from .git/config.
-* Commit.
 * Delete the now untracked submodule files.
 * Remove directory `.git/modules/<submodule name>`.
+* Commit.
+
