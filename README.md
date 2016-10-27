@@ -1,30 +1,41 @@
-# My gVim Settings
+# Personal Vim Setting
 
-`.vimrc` style is heavily inspired by [spf13-vim distribution](https://github.com/spf13/spf13-vim/blob/3.0/.vimrc).
+`.vimrc` is heavily inspired by [spf13-vim distribution](https://github.com/spf13/spf13-vim/blob/3.0/.vimrc).
 
-## Deployment
+
+## Installation
+
+### Requirements
+
+Both Vim and Python should support the same Windows version (64-bit or 32-bit) consistent with the host. But there might be incompatibility between [64-bit Vim](https://bintray.com/veegee/generic/vim_x64/) and Python 2.7.11. A workaround is to use Python 2.7.9 instead.
 
 ### Windows
-1.  Make sure both Vim and Python support the same Windows version, 64-bit or 32-bit. Notice that 64-bit Vim may not be compiled well with Python2.7.11 right now. Please try Python2.7.9 instead. You can find 64-bit Vim [here](https://bintray.com/veegee/generic/vim_x64/).
-2.	Clone repository to local folder recursively including all the submodules:  
-    `git clone --recursive https://github.com/jinmingda/vimfiles.git ~/Vim/vimfiles`
-3.	Move into working directory `~/Vim`.
-4.	Make a symbolic link for `.vimrc` in Windows Command Prompt(Admin):  
-    `mklink .vimrc .\.vim\.vimrc`
 
-## Plugins Management
+Clone this repository **recursively** to include all submodules.    
 
-### Add a New Plugin
-1.	Run `cd ~/Vim/vimfiles/bundle`.
-2.	Run `git submodule add <plugin url>`.
+	git clone --recursive https://github.com/jinmingda/vimfiles.git ~/.vim
 
-### Remove Unwanted Plugins
+Make a symbolic link for `.vimrc` in *Windows Command Prompt(Admin)*.    
+
+	cd $HOME
+	mklink .vimrc .\.vim\.vimrc
+
+
+## Plugin Management
+
+### Add a new plugin
+
+* Run `cd ~/.vim/bundle`.    
+* Run `git submodule add <plugin url>`.    
+* Run `git submodule init`.
+
+### Remove an unwanted plugin
   
 Please  see [https://gist.github.com/kyleturner/1563153](https://gist.github.com/kyleturner/1563153).
 
-1.	Run `git rm --cached <submodule name>`.
-2.	Delete the relevant lines from the .gitmodules file.
-3.	Delete the relevant section from .git/config (or `git submodule deinit <submodule_name>`).
-4.	Commit.
-5.	Delete the now untracked submodule files.
-6.	Remove directory `.git/modules/<submodule name>`.
+* Run `git rm --cached <submodule name>`.
+* Delete the relevant lines from the .gitmodules file.
+* Delete the relevant section from .git/config.
+* Commit.
+* Delete the now untracked submodule files.
+* Remove directory `.git/modules/<submodule name>`.
