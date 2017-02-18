@@ -1,3 +1,7 @@
+# My Vim Settings
+
+`.vimrc` is heavily inspired by [spf13-vim distribution](https://github.com/spf13/spf13-vim/blob/3.0/.vimrc).
+
 ## Installation
 
 ### Prerequisites
@@ -40,7 +44,4 @@ Please  see [https://gist.github.com/kyleturner/1563153](https://gist.github.com
 * Delete the now untracked submodule files.
 * Remove directory `.git/modules/<submodule name>`.
 * Commit.
-
-## Note
-
-* `.vimrc` is heavily inspired by [spf13-vim distribution](https://github.com/spf13/spf13-vim/blob/3.0/.vimrc).
+ 
