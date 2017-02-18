@@ -1,24 +1,29 @@
-# Personal Vim Setting
+# My Vim Settings
 
 `.vimrc` is heavily inspired by [spf13-vim distribution](https://github.com/spf13/spf13-vim/blob/3.0/.vimrc).
 
-
 ## Installation
 
-### Requirements
+### Prerequisites
 
-Both Vim and Python should support the same Windows version (64-bit or 32-bit) consistent with the host. But there might be incompatibility between [64-bit Vim](https://bintray.com/veegee/generic/vim_x64/) and Python 2.7.11. A workaround is to use Python 2.7.9 instead.
+* [64-bit Vim](https://bintray.com/veegee/generic/vim_x64/) for 64-bit Windows
 
-### Windows
+* 64-bit Python 2.7.9
 
-Clone this repository **recursively** to include all submodules.    
+### Install
+
+Clone the repository **recursively** to include all submodules.    
 
 	git clone --recursive https://github.com/jinmingda/vimfiles.git ~/.vim
 
-Make a symbolic link for `.vimrc` in *Windows Command Prompt(Admin)*.    
+Make a symbolic link for `.vimrc` on Windows in *Windows Command Prompt(Admin)*.    
 
 	cd $HOME
 	mklink .vimrc .\.vim\.vimrc
+
+Or on Linux.
+
+	ln -s ~/.vim/vimrc ~/.vimrc
 
 
 ## Plugin Management
@@ -39,4 +44,4 @@ Please  see [https://gist.github.com/kyleturner/1563153](https://gist.github.com
 * Delete the now untracked submodule files.
 * Remove directory `.git/modules/<submodule name>`.
 * Commit.
-
+ 

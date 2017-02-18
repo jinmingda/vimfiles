@@ -49,6 +49,7 @@
     syntax on                   " Syntax highlighting
     set mouse=a                 " Automatically enable mouse usage
     set mousehide               " Hide the mouse cursor while typing
+    set fileformat=unix         " Determine line ending characters in unix format
     set encoding=utf-8
     "scriptencoding utf-8
 
