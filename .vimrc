@@ -72,6 +72,8 @@
     "set iskeyword-=#                    " '#' is an end of word designator
     "set iskeyword-=-                    " '-' is an end of word designator
     set visualbell                      " vim will flash screen instead of sounding a beep
+    
+    au BufRead,BufNewFile Vagrantfile set filetype=ruby     " set vagrant syntax highlight like ruby
 
 " }
 
